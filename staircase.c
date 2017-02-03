@@ -7,7 +7,7 @@ int main(void) {
     {
         for(j=0;j<=i;j++)
         {
-            if((j==0)||(i==j)||(i==1))
+            if((j==0)||(i==j))
             {
                 a[i][j]=1;
             }
