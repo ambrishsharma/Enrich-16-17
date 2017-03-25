@@ -1,21 +1,24 @@
 #include<stdio.h>
-#include<conio.h>
 int main()
 {
 	int a[10][10],i,j,n,x=1;
 	scanf("%d",&n);
 	for(i=1;i<=n;i++)
 	{
-		for(j=1;j<=n;j++)
+ 		if(i%2==1)
 		{
-			if(i%2==1)
+			for(j=1;j<=n;j++)
 			{
+				
 				a[i][j]=x;
 				x++;
 			}
-			else
-			{
-				a[i][n+1-j]=x;
+		}	
+		else
+		{
+		    for(j=n;j>0;j--)
+		    {
+				a[i][j]=x;
 				x++;
 			}
 		}
@@ -30,3 +33,4 @@ int main()
 	}
 	return 0;
 }
+
