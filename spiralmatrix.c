@@ -1,5 +1,6 @@
 #include<stdio.h>
- int main()
+#include<conio.h>
+int main()
 {
 	int a[10][10],i,j,n,x=1;
 	scanf("%d",&n);
@@ -27,4 +28,5 @@
 		}
 		printf("\n");
 	}
+	return 0;
 }
